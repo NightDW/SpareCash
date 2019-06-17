@@ -1,10 +1,10 @@
 # Index-目录
 
-- 01 [About](https://github.com/NightDW/SpareCash/blob/gh-pages/01-About.md)（项目概况）
-- 02 [Team Profile](https://github.com/NightDW/SpareCash/blob/gh-pages/02-Team Profile.md)（团队组建与分工）
-- 03 [Investigation](https://github.com/NightDW/SpareCash/blob/gh-pages/03-Investigation.md)（项目前期调研/竞品分析）
-- 04 [Vision](https://github.com/NightDW/SpareCash/blob/gh-pages/04-Vision.md)（项目愿景）
-- 05 [Product Backlog](https://github.com/NightDW/SpareCash/blob/gh-pages/05-Product Backlog.md) （产品特性库）
+- 01 [About](https://nightdw.github.io/SpareCash/01-About)（项目概况）
+- 02 [Team Profile](https://nightdw.github.io/SpareCash/02-Team Profile)（团队组建与分工）
+- 03 [Investigation](https://nightdw.github.io/SpareCash/03-Investigation)（项目前期调研/竞品分析）
+- 04 [Vision](https://nightdw.github.io/SpareCash/04-Vision)（项目愿景）
+- 05 [Product Backlog](https://nightdw.github.io/SpareCash/05-Product Backlog) （产品特性库）
 - 06 Requirement Specification（需求规格说明书）
   - 6.1 Usecase Diagram and UML Activity Diagram（用例图，业务过程/多泳道图）
   - 6.2 Use Cases（用例+活动图）

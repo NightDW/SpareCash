@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/common/user-info.css}" />
+    <link rel="stylesheet" th:href="@{/css/user/edit.css}" />
+    <link rel="stylesheet" th:href="@{/css/common/foot.css}" />
+    <title th:if="${user == null}">注册</title>
+    <title th:if="${user != null}">修改</title>
+</head>
+<body>
+
+<!-- 固定有的用户信息部分，位于页面的顶部 -->
+<div th:replace="common/common::user-info"></div>
+
+<div class="tip">请填写账户信息</div>
+<!-- 用于显示我们自定义的Controller传来的消息 -->
+<div class="msg" th:if="${msg != null}" th:text="${msg}"></div>
+<div class="msg" th:if="${#request.getParameter('error') != null}">提交的UID/名称/电话/邮箱在数据库中已存在，请检查您的注册信息！</div>
+
+<!-- 表单 -->
+<form method="post" id="userForm">
+    <!-- 如果获取到了user，说明此时是修改用户信息，应使用PUT方式提交 -->
+    <input th:if="${user != null}" type="hidden" name="_method" value="put" />
+    <!-- 如果获取到了user，则还需要提交该user的id -->
+    <input id="id" th:if="${user != null}" type="hidden" name="id" th:value="${user.id}" />
+
+    <div>
+        <span>账户类型：</span>
+        <select name="identity" id="identitySelect">
+            <option value="0" th:selected="${user != null && user.identity.ordinal() == 0}">学生</option>
+            <option value="1" th:selected="${user != null && user.identity.ordinal() == 1}">奶牛</option>
+        </select>
+    </div>
+    <div>
+        <span id="uid_text">UID:</span>
+        <input id="uid" type="number" name="uid" th:value="${user == null} ? _ : ${user.uid}" />
+    </div>
+    <div class="err_msg">
+        <span id="uid_span"></span>
+    </div>
+    <div>
+        <span>用户名：</span>
+        <input id="name" type="text" name="name" th:value="${user == null} ? _ : ${user.name}" />
+    </div>
+    <div class="err_msg">
+        <span id="name_span"></span>
+    </div>
+    <div>
+        <span>密码：</span>
+        <input id="password" type="password" name="password" th:value="${user == null} ? _ : ${user.password}" />
+    </div>
+    <div>
+        <span>确认密码：</span>
+        <input id="password_confirm" type="password" th:value="${user == null} ? _ : ${user.password}" />
+    </div>
+    <div>
+        <span>电话：</span>
+        <input id="phone" type="number" name="phone" th:value="${user == null} ? _ : ${user.phone}" />
+    </div>
+    <div class="err_msg">
+        <span id="phone_span"></span>
+    </div>
+    <div>
+        <span>邮箱：</span>
+        <input id="email" type="email" name="email" th:value="${user == null} ? _ : ${user.email}" />
+    </div>
+    <div class="err_msg">
+        <span id="email_span"></span>
+    </div>
+    <div class="stu_info">
+        <span>年级：</span>
+        <select name="grade">
+            <option value="0" th:selected="${user != null && user.identity.ordinal() == 0 && user.grade == 0}">其它</option>
+            <option value="1" th:selected="${user != null && user.identity.ordinal() == 0 && user.grade == 1}">大一</option>
+            <option value="2" th:selected="${user != null && user.identity.ordinal() == 0 && user.grade == 2}">大二</option>
+            <option value="3" th:selected="${user != null && user.identity.ordinal() == 0 && user.grade == 3}">大三</option>
+            <option value="4" th:selected="${user != null && user.identity.ordinal() == 0 && user.grade == 4}">大四</option>
+        </select>
+    </div>
+    <div class="stu_info">
+        <span>性别：</span>
+        <select name="gender">
+            <option value="0" th:selected="${user != null && user.identity.ordinal() == 0 && user.gender == 0}">女</option>
+            <option value="1" th:selected="${user != null && user.identity.ordinal() == 0 && user.gender == 1}">男</option>
+        </select>
+    </div>
+    <div class="stu_info">
+        <span>年龄：</span>
+        <input id="age" type="number" name="age" th:value="${user == null || user.identity.ordinal() == 1} ? _ : ${user.age}" />
+    </div>
+    <div class="stu_info">
+        <span>专业：</span>
+        <input id="major" type="text" name="major" th:value="${user == null || user.identity.ordinal() == 1} ? _ : ${user.major}" />
+    </div>
+    <div>
+        <input type="button" id="submitButton" value="提交" />
+    </div>
+</form>
+
+<!-- 固定有的页面尾部 -->
+<div th:replace="common/common::foot"></div>
+
+</body>
+
+<!-- 引入Jquery -->
+<div th:replace="common/common::jquery"></div>
+
+<!-- 根据用户注册的账户是学生还是奶牛来动态调整表单的代码 -->
+<script>
+    function refresh (){
+        //获取到表单
+        var form = $("#userForm");
+        //查看当前账户是学生还是奶牛
+        var identity = $("#identitySelect").find("option:selected").val();
+        //如果注册的是学生，则需要把相关组件显示出来，让用户填写年龄等属性，并把提交的url改为/user/stu
+        if(identity === "0"){   //不要和数字0比较
+            form.attr("action", "/user/stu");
+            $("#uid_text").text("学号：");
+            $(".stu_info").show()
+        }
+        //如果注册的是奶牛，则无需填写年龄等属性，即把相关组件隐藏起来，并把提交的url改为/user/cow
+        if(identity === "1"){   //不要和数字1比较
+            form.attr("action", "/user/cow");
+            $("#uid_text").text("机构号：");
+            $(".stu_info").hide()
+        }
+    }
+    //页面加载完毕时刷新
+    $(document).ready(refresh);
+    //identitySelect的值被改变时也需要刷新
+    $("#identitySelect").change(refresh);
+</script>
+
+<!-- 用于检查用户填写的信息是否完整 -->
+<script>
+    //定义一个判断字符串是否为null或空字符串的函数
+    function isEmpty(obj){
+        return (typeof obj === "undefined" || obj == null || obj === "")
+    }
+    //在提交时判断用户是否填写了表单的必填项
+    $("#submitButton").click(function () {
+        var uid = $("#uid").val();
+        var name = $("#name").val();
+        var password = $("#password").val();
+        var password_confirm = $("#password_confirm").val();
+        var phone = $("#phone").val();
+        var email = $("#email").val();
+        var identity = $("#identitySelect").find("option:selected").val();
+        var age = $("#age").val();
+        var major = $("#major").val();
+        if(isEmpty(uid) || isEmpty(name) || isEmpty(password) || isEmpty(password_confirm) || isEmpty(phone) || isEmpty(email) || (identity === "0" && isEmpty(age)) || (identity === "0" && isEmpty(major)))
+            alert("请把信息填写完整！");
+        else if(password !== password_confirm)
+            alert("两次密码输入不同，请重新输入！");
+        else
+            $("#userForm").submit();
+    });
+</script>
+
+<!-- 在注册账户时，使用AJAX判断用户名等是否已被注册 -->
+<script th:if="${user == null}">
+    $("#uid").blur(function () {
+        var itemValue = $("#uid").val();
+        var data = {uid : itemValue};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#uid_span").text(data);
+            }
+        })
+    });
+    $("#name").blur(function () {
+        var itemValue = $("#name").val();
+        var data = {name : itemValue};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#name_span").text(data);
+            }
+        })
+    });
+    $("#phone").blur(function () {
+        var itemValue = $("#phone").val();
+        var data = {phone : itemValue};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#phone_span").text(data);
+            }
+        })
+    });
+    $("#email").blur(function () {
+        var itemValue = $("#email").val();
+        var data = {email : itemValue};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#email_span").text(data);
+            }
+        })
+    });
+</script>
+
+<!-- 在修改账户信息时，使用AJAX判断用户名等是否已被除了当前用户的其它用户注册了 -->
+<script th:if="${user != null}">
+    $("#uid").blur(function () {
+        var itemValue = $("#uid").val();
+        var id = $("#id").val();
+        var data = {uid : itemValue, id : id};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#uid_span").text(data);
+            }
+        })
+    });
+    $("#name").blur(function () {
+        var itemValue = $("#name").val();
+        var id = $("#id").val();
+        var data = {name : itemValue, id : id};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#name_span").text(data);
+            }
+        })
+    });
+    $("#phone").blur(function () {
+        var itemValue = $("#phone").val();
+        var id = $("#id").val();
+        var data = {phone : itemValue, id : id};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#phone_span").text(data);
+            }
+        })
+    });
+    $("#email").blur(function () {
+        var itemValue = $("#email").val();
+        var id = $("#id").val();
+        var data = {email : itemValue, id : id};
+        $.ajax({
+            url: "/user/check",
+            data: data,
+            success:function(data){
+                if(data != null)
+                    $("#email_span").text(data);
+            }
+        })
+    });
+</script>
+
+</html>

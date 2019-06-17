@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress SqlNoDataSourceInspection -->
+<mapper namespace="com.laidw.mapper.TaskMapper">
+    <!-- 抽取SQL片段 -->
+    <sql id="norTableCols">
+        pub_id, title, description, payment, type, is_available, cur_count, max_count
+    </sql>
+    <sql id="invTableCols">
+        <include refid="norTableCols" />, grade_limit, gender_limit, age_limit, major_limit, ques_id
+    </sql>
+    <sql id="norClassAtts">
+        #{publisher.id}, #{title}, #{description}, #{payment}, #{type}, #{isAvailable}, #{curCount}, #{maxCount}
+    </sql>
+    <sql id="invClassAtts">
+        <include refid="norClassAtts" />, #{gradeLimit}, #{genderLimit}, #{ageLimit}, #{majorLimit}, #{questionnaire.id}
+    </sql>
+    <sql id="setNor">
+        pub_id = #{publisher.id},
+        title = #{title},
+        description = #{description},
+        payment = #{payment},
+        type = #{type},
+        is_available = #{isAvailable},
+        cur_count = #{curCount},
+        max_count = #{maxCount}
+    </sql>
+    <sql id="setInv">
+        <include refid="setNor" />,
+        grade_limit = #{gradeLimit},
+        gender_limit = #{genderLimit},
+        age_limit = #{ageLimit},
+        major_limit = #{majorLimit},
+        ques_id = #{questionnaire.id}
+    </sql>
+    <sql id="setNorSelectively">
+        <if test="publisher != null and publisher.id != null">
+            pub_id = #{publisher.id},
+        </if>
+        <if test="title != null">
+            title = #{title},
+        </if>
+        <if test="description != null">
+            description = #{description},
+        </if>
+        <if test="payment != null">
+            payment = #{payment},
+        </if>
+        <if test="type != null">
+            type = #{type},
+        </if>
+        <if test="isAvailable != null">
+            is_available = #{isAvailable},
+        </if>
+        <if test="curCount != null">
+            cur_count = #{curCount},
+        </if>
+        <if test="maxCount != null">
+            max_count = #{maxCount},
+        </if>
+    </sql>
+    <sql id="setInvSelectively">
+        <include refid="setNorSelectively" />
+        <if test="gradeLimit != null">
+            grade_limit = #{gradeLimit},
+        </if>
+        <if test="genderLimit != null">
+            gender_limit = #{genderLimit},
+        </if>
+        <if test="ageLimit != null">
+            age_limit = #{ageLimit},
+        </if>
+        <if test="majorLimit != null">
+            major_limit = #{majorLimit},
+        </if>
+        <if test="questionnaire != null and questionnaire.id != null">
+            ques_id = #{questionnaire.id}
+        </if>
+    </sql>
+
+
+    <!-- 自定义封装方法 -->
+    <!-- 统一封装成Task对象，因为普通任务最终封装成TaskTO对象，而调查任务还是封装成InvestigatingTask对象 -->
+    <resultMap id="taskMap" type="com.laidw.entity.task.Task">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="description" property="description" />
+        <result column="payment" property="payment" />
+        <result column="type" property="type" />
+        <result column="is_available" property="isAvailable" />
+        <!-- 分步查询出该任务的发布者 -->
+        <association column="pub_id" property="publisher" select="com.laidw.mapper.UserMapper.selectUserById" />
+        <!-- 分步查询出该任务的接收者 -->
+        <collection column="id" property="acceptors" select="com.laidw.mapper.UserAccTaskMapper.findUsersWhoAcceptedThisTask" />
+        <!-- 根据type字段来确定是封装成NormalTask对象还是InvestigatingTask对象 -->
+        <discriminator javaType="int" column="type">
+            <case value="0" resultType="com.laidw.entity.task.TaskTO">
+                <!-- 如果是普通任务，则需要封装成TaskTO对象，因为该任务需要isDone属性 -->
+                <!-- 注意，调用的isDone()方法有uid和tid两个形参，但这里只需传入tid参数，而uid保持为null即可 -->
+                <!-- column写"id"肯定是错的，因为调用的方法有2个参数；"{uid = null, tid = id}"也不对，MyBatis把"null"当作和"id"一样，即当成结果集中的一个列了 -->
+                <!-- 正确写法是"{tid = id}"，只指定tid传入结果集中id列的值，uid就自动取空值了 -->
+                <association property="isDone" column="{tid = id}" select="com.laidw.mapper.UserAccTaskMapper.isDone" />
+            </case>
+            <case value="1" resultType="com.laidw.entity.task.InvestigatingTask">
+                <result column="grade_limit" property="gradeLimit" />
+                <result column="gender_limit" property="genderLimit" />
+                <result column="age_limit" property="ageLimit" />
+                <result column="major_limit" property="majorLimit" />
+                <association property="questionnaire" column="ques_id" select="com.laidw.mapper.QuestionnaireMapper.selectQuestionnaireById" />
+            </case>
+        </discriminator>
+    </resultMap>
+
+
+    <!-- 编写SQL语句 -->
+    <insert id="insertNormalTask" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+          task(<include refid="norTableCols" />)
+        VALUES
+          (<include refid="norClassAtts" />)
+    </insert>
+    <insert id="insertInvestigatingTask" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+          task(<include refid="invTableCols" />)
+        VALUES
+          (<include refid="invClassAtts" />)
+    </insert>
+
+    <delete id="deleteTaskById">
+        DELETE FROM task WHERE id = #{id}
+    </delete>
+
+    <update id="updateNormalTaskById">
+        UPDATE task
+        SET
+          <include refid="setNor" />
+        WHERE
+          id = #{id}
+    </update>
+    <update id="updateNormalTaskByIdSelectively">
+        UPDATE task
+        <set>
+            <include refid="setNorSelectively" />
+        </set>
+        WHERE
+          id = #{id}
+    </update>
+    <update id="updateInvestigatingTaskById">
+        UPDATE task
+        SET
+          <include refid="setInv" />
+        WHERE
+          id = #{id}
+    </update>
+    <update id="updateInvestigatingTaskByIdSelectively">
+        UPDATE task
+        <set>
+            <include refid="setInvSelectively" />
+        </set>
+        WHERE
+          id = #{id}
+    </update>
+    <update id="updateTaskCurCount">
+        UPDATE task SET cur_count = cur_count + #{step} WHERE id =#{tid}
+    </update>
+
+    <update id="setTaskAvail">
+        UPDATE task SET is_available=
+        <choose>
+            <when test="isAvailable == true">1</when>
+            <otherwise>0</otherwise>
+        </choose>
+        WHERE id = #{tid}
+    </update>
+
+    <select id="selectTaskById" resultMap="taskMap">
+        SELECT * FROM task WHERE id = #{id}
+    </select>
+    <select id="selectInvTaskByQueId" resultMap="taskMap">
+        SELECT * FROM task WHERE ques_id = #{qid}
+    </select>
+    <select id="selectAllTasks" resultMap="taskMap">
+        SELECT * FROM task
+    </select>
+    <select id="selectAllAvailableTasks" resultMap="taskMap">
+        SELECT * FROM task WHERE cur_count &lt; max_count AND is_available = 1
+    </select>
+    <select id="selectAllMyPublishedTasks" resultMap="taskMap">
+        SELECT * FROM task WHERE pub_id = #{myId}
+    </select>
+</mapper>

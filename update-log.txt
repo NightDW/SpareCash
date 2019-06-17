@@ -1,0 +1,33 @@
+﻿1 各种实体类定义完成
+    - 同时编写了schema.sql文件，用于程序启动时在数据库中建表
+    - 要特别注意Jackson工具的用法，尤其是把JSON数据转换成List集合
+
+2 使用MyBatis开发Mapper并已通过测试
+    - 要特别注意UserAccTaskMapper类，TaskTO类和UserTO类
+
+3 编写各种Service类
+    - 期间给TaskMapper接口新增了setAvail()方法，注意该方法未被测试过
+
+4 一些调整与优化
+    - 引入SpringSecurity，用于安全管理
+    - UserMapper接口新增了selectUserByName()方法，注意该方法未被测试过
+    - 引入Mail模块，开发MailService来实现发送邮件功能，用于验证用户注册账户时绑定的邮箱
+    - Task类添加title属性，给task表添加相应的字段，注意TaskMapper没有重新测试
+    - Task类的isAvailable属性替换为curCount属性和maxCount属性，当curCount == maxCount时，isAvailable == false，注意TaskMapper没有重新测试
+    - User类添加verifyCode和password属性，给user表添加相应的字段，注意UserMapper没有重新测试
+    - User类实现了UserDetails接口，这样SpringSecurity在验证用户名和密码时可以直接调用User类的相关方法
+    - 初步添加BaseController及其相关页面
+
+5 全面开发Web层，包括Controller和相关页面
+    - 给UserMapper新增了selectUserIfExistExceptMe()方法，用于检测UID/用户名/电话/邮箱是否已经被注册
+    - 给UserMapper新增了setUserIsActive()方法，用于激活或冻结账户
+    - 给UserMapper新增了selectUserWhoHas()方法，该方法将会在找回密码的时候被使用
+    - 用户注册，登录，修改用户信息等功能基本完成
+    - 其它Controller及相关页面基本完成
+
+6 可以考虑新增或待完成的业务
+    - 闲钱币充值
+    - 安全管理，即控制哪些url可以匿名访问，哪些url需要有特定的权限才能访问等
+    - 恢复Task类的isAvailable属性及其相关方法，详见readme.txt文件
+    - UserAccTaskMapper新增isDone()方法，用于查询某人是否完成了某任务；如果不传入接收者的id，则查询某任务是否被完成，注意此时该方法只适用于普通任务
+    - 各种Mapper的一些查询方法返回类型由Bean/List<Bean>改为PageBean<Bean>，用于分页查询

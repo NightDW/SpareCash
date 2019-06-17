@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/common/user-info.css}" />
+    <link rel="stylesheet" th:href="@{/css/user/forget.css}" />
+    <link rel="stylesheet" th:href="@{/css/common/foot.css}" />
+    <title>登录</title>
+</head>
+<body>
+
+<!-- 固定有的用户信息部分，位于页面的顶部 -->
+<div th:replace="common/common::user-info"></div>
+
+<!-- 提示信息 -->
+<div class="tip">请填写您的UID/账户名/电话/邮箱</div>
+<div class="small_tip">注意，只需要填写一个即可，请选择您最确定的一个来填写；填写多个时，以最前面的一个为准</div>
+
+<!-- 表单 -->
+<form th:action="@{/user/forget}" method="post">
+    <div>
+        <span>UID：</span>
+        <input id="uid" type="number" name="uid" />
+    </div>
+    <div>
+        <span>名称：</span>
+        <input id="name" type="text" name="name" />
+    </div>
+    <div>
+        <span>电话：</span>
+        <input id="phone" type="number" name="phone" />
+    </div>
+    <div>
+        <span>邮箱：</span>
+        <input id="email" type="email" name="email" />
+    </div>
+    <div>
+        <input id="submitButton" type="submit" value="找回" />
+    </div>
+</form>
+
+<!-- 固定有的页面尾部 -->
+<div th:replace="common/common::foot"></div>
+
+</body>
+
+<!-- 引入Jquery -->
+<div th:replace="common/common::jquery"></div>
+
+<!-- 检查用户是否填写了信息 -->
+<script>
+    $("#submitButton").click(function () {
+        var uid = $("#uid").val();
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var email = $("#email").val();
+        if(uid == null && name == null && phone == null && email == null)
+            alert("UID/账户名/电话/邮箱至少要填写一个！");
+    })
+</script>
+
+</html>

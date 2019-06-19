@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/common/user-info.css}" />
+    <link rel="stylesheet" th:href="@{/css/task/edit.css}" />
+    <link rel="stylesheet" th:href="@{/css/common/foot.css}" />
+    <title th:if="${task == null}">发布</title>
+    <title th:if="${task != null}">修改</title>
+</head>
+<body>
+
+<!-- 固定有的用户信息部分，位于页面的顶部 -->
+<div th:replace="common/common::user-info"></div>
+
+<div class="tip">请填写任务信息</div>
+<!-- 用于显示我们自定义的Controller传来的消息 -->
+<div class="msg" th:if="${msg != null}" th:text="${msg}"></div>
+<div class="msg" th:if="${#request.getParameter('error') != null}">年级限制/年龄限制/专业限制的格式有误！</div>
+
+<!-- 表单 -->
+<form method="post" id="taskForm">
+    <!-- 如果获取到了task，说明此时是修改任务信息，应使用PUT方式提交 -->
+    <input th:if="${task != null}" type="hidden" name="_method" value="put" />
+    <!-- 如果获取到了task，则还需要提交该task的id -->
+    <input id="id" th:if="${task != null}" type="hidden" name="id" th:value="${task.id}" />
+    <!-- 如果获取到了user，当然正常情况下都能获得，则还需要把用户的id也提交上去 -->
+    <input id="uid" th:if="${user != null}" type="hidden" name="uid" th:value="${user.id}" />
+    <!-- 如果获取到了url（url就是点击修改按钮或部分添加按钮时浏览器地址栏中的地址），需要把它也提交过去，便于执行完操作后返回原页面 -->
+    <input type="hidden" th:if="${url != null}" name="url" th:value="${url}">
+
+    <div>
+        <span>类型：</span>
+        <!-- 如果当前用户是学生或当前操作是修改操作的话，则不允许修改type的值，也就是只能发布普通任务 -->
+        <select name="type" id="typeSelect" th:disabled="${(user != null && user.identity.ordinal() == 0) || task != null}">
+            <option value="0" th:selected="${task != null && task.type.ordinal() == 0}">普通任务</option>
+            <option value="1" th:selected="${task != null && task.type.ordinal() == 1}">调查任务</option>
+        </select>
+    </div>
+    <div>
+        <span>标题：</span>
+        <input id="title" type="text" name="title" th:value="${task == null} ? _ : ${task.title}" />
+    </div>
+    <div>
+        <span>描述：</span>
+        <input id="description" type="text" name="description" th:value="${task == null} ? _ : ${task.description}" />
+    </div>
+    <div>
+        <span>报酬：</span>
+        <input id="payment" type="number" name="payment" th:value="${task == null} ? _ : ${task.payment}" />
+    </div>
+
+    <div class="inv_info">
+        <span>调查人数：</span>
+        <input id="maxCount" type="number" name="maxCount" th:value="${task == null || task.type.ordinal() == 0} ? _ : ${task.maxCount}" />
+    </div>
+    <div class="inv_info">
+        <span>年级限制：</span>
+        <input id="gradeLimit" type="text" placeholder="可不填，格式为'1-3'" name="gradeLimit" th:value="${task == null || task.type.ordinal() == 0} ? _ : ${task.gradeLimit}" />
+    </div>
+    <div class="inv_info">
+        <span>年龄限制：</span>
+        <input id="ageLimit" type="text" placeholder="可不填，格式为'1-3'" name="ageLimit" th:value="${task == null || task.type.ordinal() == 0} ? _ : ${task.ageLimit}" />
+    </div>
+    <div class="inv_info">
+        <span>性别限制：</span>
+        <select name="genderLimit">
+            <option value="">无限制</option>
+            <option value="0" th:selected="${task != null && task.type.ordinal() == 1 && task.genderLimit == 0}">女</option>
+            <option value="1" th:selected="${task != null && task.type.ordinal() == 1 && task.genderLimit == 1}">男</option>
+        </select>
+    </div>
+    <div class="inv_info">
+        <span>专业限制：</span>
+        <input id="majorLimit" type="text" placeholder="可不填，格式为'a,b,c'" name="majorLimit" th:value="${task == null || task.type.ordinal() == 0} ? _ : ${task.majorLimit}" />
+    </div>
+    <div>
+        <input type="button" id="submitButton" value="提交" />
+    </div>
+</form>
+
+<!-- 固定有的页面尾部 -->
+<div th:replace="common/common::foot"></div>
+
+</body>
+
+<!-- 引入Jquery -->
+<div th:replace="common/common::jquery"></div>
+
+<!-- 根据用户发布/修改的任务是普通任务还是调查任务来动态调整表单的代码 -->
+<script>
+    function refresh (){
+        //获取到表单
+        var form = $("#taskForm");
+        //查看当前任务是普通任务还是调查任务
+        var type = $("#typeSelect").find("option:selected").val();
+        //如果当前任务是调查任务，则需要把相关组件显示出来，让用户填写相关信息，并把提交的url改为/task/inv
+        if(type === "1"){   //不要和数字0比较，而是和字符串"0"比较，一定要注意！很坑！
+            form.attr("action", "/task/inv");
+            $(".inv_info").show()
+        }
+        //如果只是普通任务，则无需填写额外的信息，即把相关组件隐藏起来，并把提交的url改为/task/nor
+        if(type === "0"){   //不要和数字1比较，而是和字符串"1"比较，一定要注意！很坑！
+            form.attr("action", "/task/nor");
+            $(".inv_info").hide()
+        }
+    }
+    //页面加载完毕时刷新
+    $(document).ready(refresh);
+    //typeSelect的值被改变时也需要刷新
+    $("#typeSelect").change(refresh);
+</script>
+
+<!-- 用于检查用户填写的信息是否完整 -->
+<script>
+    //定义一个判断字符串是否为null或空字符串的函数
+    function isEmpty(obj){
+        return (typeof obj === "undefined" || obj == null || obj === "")
+    }
+    //在提交时判断用户是否填写了表单的必填项，以及ageLimit等数据的输入是否符合格式
+    //注意JS中正则表达式是用两个斜划线包起来的
+    $("#submitButton").click(function () {
+        var title = $("#title").val();
+        var description = $("#description").val();
+        var payment = $("#payment").val();
+        var type = $("#typeSelect").find("option:selected").val();
+        var maxCount = $("#maxCount").val();
+        var gradeLimit = $("#gradeLimit").val();
+        var gradePattern = /^[0-4]-[0-4]$/;
+        var ageLimit = $("#ageLimit").val();
+        var agePattern = /^[0-9]{1,2}-[0-9]{1,2}$/;
+        var majorLimit = $("#majorLimit").val();
+        var majorPattern = /^[A-Za-z0-9]{1,}(,[A-Za-z0-9]{1,})*$/;
+        if(isEmpty(title) || isEmpty(description) || isEmpty(payment) || (type === "1" && isEmpty(maxCount)))
+            alert("请把信息填写完整！");
+        else if(!isEmpty(gradeLimit) && !gradePattern.test(gradeLimit))
+            alert("年级限制格式有误！");
+        else if(!isEmpty(ageLimit) && !agePattern.test(ageLimit))
+            alert("年龄限制格式有误！");
+        else if(!isEmpty(majorLimit) && !majorPattern.test(majorLimit))
+            alert("专业限制格式有误！");
+        else{
+            //select标签被disabled的话它的数据是无法提交的，因此在提交前需移除disabled属性
+            $("#typeSelect").removeAttr("disabled");
+            $("#taskForm").submit();
+        }
+    });
+</script>
+
+</html>

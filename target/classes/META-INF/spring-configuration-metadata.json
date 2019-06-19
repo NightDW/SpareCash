@@ -1,0 +1,26 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.laidw.web.properties.PageShowProperties",
+      "name": "controller.page",
+      "type": "com.laidw.web.properties.PageShowProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.laidw.web.properties.PageShowProperties",
+      "defaultValue": 7,
+      "name": "controller.page.navigate-pages",
+      "description": "指定导航条上要显示几个页码",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.laidw.web.properties.PageShowProperties",
+      "defaultValue": 100,
+      "name": "controller.page.page-size",
+      "description": "指定一个页面要展示多少条属性数据",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

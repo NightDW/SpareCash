@@ -1,0 +1,54 @@
+.tip{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 楷体;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.msg{
+    font-family: 楷体;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+form{
+    background: #EEEEEE;
+}
+.question{
+    width: 1160px;
+    margin: 10px auto;
+}
+.question label{
+    display: inline-block;
+    line-height: 45px;
+    font-size: 20px;
+    height: 45px;
+    margin-right: 10px;
+}
+.question label span{
+    display: inline-block;
+    width: 72px;
+}
+.question label input{
+    height: 24px;
+    width: 200px;
+}
+.question label select{
+    height: 30px;
+    width: 204px;
+}
+.question label input[type=checkbox]{
+    width: 30px;
+    vertical-align: middle;
+}
+.question .deleteQButton{
+    height: 25px;
+    margin-left: 110px;
+}
+form #addQButton,input[type=submit]{
+    margin: 10px auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+}

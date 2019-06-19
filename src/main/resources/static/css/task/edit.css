@@ -1,0 +1,53 @@
+.tip{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 楷体;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.msg{
+    font-family: 楷体;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+form{
+    background: #EEEEEE;
+}
+form div{
+    width: 337px;
+    height: 50px;
+    margin: 0 auto;
+}
+form .err_msg{
+    height: 20px;
+    line-height: 20px;
+}
+form div:last-of-type{
+    width: 220px;
+    margin-top: 10px;
+}
+form div span{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+form .err_msg span{
+    width: 337px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: red;
+}
+form div input,select,button{
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 220px;
+    line-height: 40px;
+}

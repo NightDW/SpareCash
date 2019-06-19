@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28c660b6-0fce-40a0-a59c-93b17c50d850" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1302053488">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="56" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.108" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="2" />
+          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.33" value="3" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="3" />
+          <entry key="project.open.time.37" value="3" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="4" />
+          <entry key="project.open.time.50" value="3" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.54" value="3" />
+          <entry key="project.open.time.5539" value="1" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.68" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.opened" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="UserAccTaskMapper" value="8" />
+          <entry key="class" value="2" />
+          <entry key="css" value="67" />
+          <entry key="html" value="213" />
+          <entry key="java" value="756" />
+          <entry key="md" value="1" />
+          <entry key="png" value="1" />
+          <entry key="properties" value="11" />
+          <entry key="sql" value="27" />
+          <entry key="txt" value="89" />
+          <entry key="xml" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="CSS" value="67" />
+          <entry key="HTML" value="213" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="756" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="Properties" value="11" />
+          <entry key="SQL" value="27" />
+          <entry key="XML" value="123" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="UserAccTaskMapper" value="728" />
+          <entry key="css" value="1272" />
+          <entry key="dummy" value="12" />
+          <entry key="html" value="18026" />
+          <entry key="java" value="42180" />
+          <entry key="properties" value="484" />
+          <entry key="sql" value="1668" />
+          <entry key="txt" value="5060" />
+          <entry key="xml" value="8666" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1272" />
+          <entry key="HTML" value="18025" />
+          <entry key="JAVA" value="42180" />
+          <entry key="PLAIN_TEXT" value="5072" />
+          <entry key="Properties" value="484" />
+          <entry key="SQL" value="1838" />
+          <entry key="ThymeleafExpressions" value="1" />
+          <entry key="XML" value="9224" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="751640638">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="4" />
+          <entry key="properties" value="6" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="6" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="properties" value="102" />
+          <entry key="sql" value="18" />
+          <entry key="txt" value="863" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="PLAIN_TEXT" value="863" />
+          <entry key="Properties" value="102" />
+          <entry key="SQL" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Bytes</find>
+      <find>super</find>
+      <find>@Override</find>
+      <find>update</find>
+      <find>修改失败，请检查用户名是否已经被注册了</find>
+      <find>html</find>
+      <find>auto-logout</find>
+      <find>base</find>
+      <find>/find</find>
+      <find>/verify</find>
+      <find>verify</find>
+      <find>verify?</find>
+      <find>sendVerifyMail</find>
+      <find>sendFind</find>
+      <find>user/edit</find>
+      <find>error/error</find>
+      <find>forward:/user</find>
+      <find>mailservice</find>
+      <find>_text</find>
+      <find>pokemon-list</find>
+      <find>question.num</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>JSON</replace>
+      <replace>user</replace>
+      <replace>task-list</replace>
+      <replace>question.num - 1</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/forget.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/icon.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/base/logout-soon.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/error/error.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/task/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/laidw/entity/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/pagebean/PageBean.java" />
+        <option value="$PROJECT_DIR$/update-log.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/web/properties/PageShowProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/task/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/questionnaire/edit.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/base/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/task/TaskTO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/laidw/mapper/UserAccTaskMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/mapper/UserAccTaskMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/laidw/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/task/list.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/web/controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/web/controller/UserAccTaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/questionnaire/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/questionnaire/show.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/questionnaire/show.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/service/UserAccTaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/service/impl/UserAccTaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/laidw/mapper/TaskMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/acc_task/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/acc_task/list.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/base/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Questionnaire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/web/controller/QuestionnaireController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/questionnaire/result.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/questionnaire/result.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/laidw/web/controller/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/common/common.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/user/detail.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/task/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/AnswersTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/StatisticalAnswer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/entity/user/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laidw/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpareCash" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpareCash" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpareCash" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laidw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laidw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laidw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="laidw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpareCashForALi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpareCashForALi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560934427929" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\templates\mail" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\templates\user" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\static\css\user" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\com\laidw\controller" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\templates\base" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\static\css\user" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\templates\user" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\templates\questionnaire" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\static\css\questionnaire" />
+      <recent name="C:\Users\Acer\Desktop\IdeaPros\SpareCash\src\main\resources\static\css\acc_task" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpareCashApplication">
+    <configuration name="StatisticalAnswer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.laidw.entity.questionnaire.StatisticalAnswer" />
+      <module name="SpareCash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laidw.entity.questionnaire.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAccTaskMapperTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpareCash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laidw.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laidw.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.laidw.mapper.UserAccTaskMapperTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAccTaskMapperTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpareCash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laidw.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laidw.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.laidw.mapper.UserAccTaskMapperTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpareCash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laidw.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laidw.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.laidw.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpareCash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laidw.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laidw.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.laidw.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpareCashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpareCash" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.laidw.SpareCashApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpareCashApplication" />
+      <item itemvalue="JUnit.UserAccTaskMapperTest.test2" />
+      <item itemvalue="JUnit.UserAccTaskMapperTest.test3" />
+      <item itemvalue="JUnit.UserMapperTest.test" />
+      <item itemvalue="JUnit.UserMapperTest.testSelect" />
+      <item itemvalue="Application.StatisticalAnswer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StatisticalAnswer" />
+        <item itemvalue="JUnit.UserMapperTest.testSelect" />
+        <item itemvalue="JUnit.UserMapperTest.test" />
+        <item itemvalue="JUnit.UserAccTaskMapperTest.test3" />
+        <item itemvalue="JUnit.UserAccTaskMapperTest.test2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28c660b6-0fce-40a0-a59c-93b17c50d850" name="Default Changelist" comment="" />
+      <created>1556159376253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556159376253</updated>
+      <workItem from="1556159386924" duration="122000" />
+      <workItem from="1557910159754" duration="1552000" />
+      <workItem from="1558168724022" duration="5891000" />
+      <workItem from="1558186688410" duration="4625000" />
+      <workItem from="1558244866389" duration="14370000" />
+      <workItem from="1558266742602" duration="7011000" />
+      <workItem from="1558318166405" duration="2650000" />
+      <workItem from="1558333673865" duration="2573000" />
+      <workItem from="1558419515368" duration="5773000" />
+      <workItem from="1558437021294" duration="6023000" />
+      <workItem from="1558452698606" duration="1657000" />
+      <workItem from="1558461921653" duration="11000000" />
+      <workItem from="1558513462269" duration="3032000" />
+      <workItem from="1558527122025" duration="7686000" />
+      <workItem from="1558593689665" duration="1084000" />
+      <workItem from="1558594819227" duration="5501000" />
+      <workItem from="1558613093839" duration="12792000" />
+      <workItem from="1558751749875" duration="5275000" />
+      <workItem from="1558763675658" duration="20631000" />
+      <workItem from="1558787892062" duration="9002000" />
+      <workItem from="1558797968884" duration="2066000" />
+      <workItem from="1558848698186" duration="15958000" />
+      <workItem from="1558867509435" duration="6393000" />
+      <workItem from="1558875330909" duration="5501000" />
+      <workItem from="1558882566124" duration="3660000" />
+      <workItem from="1558922758599" duration="3296000" />
+      <workItem from="1558935902649" duration="847000" />
+      <workItem from="1558938441157" duration="1925000" />
+      <workItem from="1558945720160" duration="10468000" />
+      <workItem from="1558967845518" duration="1083000" />
+      <workItem from="1559041488968" duration="927000" />
+      <workItem from="1559049133757" duration="27000" />
+      <workItem from="1559118241025" duration="3201000" />
+      <workItem from="1559132581751" duration="1293000" />
+      <workItem from="1559134558366" duration="6658000" />
+      <workItem from="1559143888653" duration="2984000" />
+      <workItem from="1559155223772" duration="1613000" />
+      <workItem from="1559156855071" duration="2201000" />
+      <workItem from="1559200795141" duration="2466000" />
+      <workItem from="1559205451281" duration="5869000" />
+      <workItem from="1559213966930" duration="4880000" />
+      <workItem from="1559221214962" duration="4879000" />
+      <workItem from="1559227658766" duration="4322000" />
+      <workItem from="1559284164678" duration="1949000" />
+      <workItem from="1559292092115" duration="5733000" />
+      <workItem from="1559300488155" duration="5258000" />
+      <workItem from="1559378802059" duration="5363000" />
+      <workItem from="1559386398673" duration="5300000" />
+      <workItem from="1559397109965" duration="7318000" />
+      <workItem from="1559483536293" duration="8053000" />
+      <workItem from="1559527480251" duration="1771000" />
+      <workItem from="1559543222199" duration="15839000" />
+      <workItem from="1559569189166" duration="5827000" />
+      <workItem from="1559576269805" duration="1463000" />
+      <workItem from="1559617622550" duration="2619000" />
+      <workItem from="1559723220017" duration="1257000" />
+      <workItem from="1560932922296" duration="1772000" />
+      <workItem from="1560943173206" duration="480000" />
+      <workItem from="1560945327626" duration="653000" />
+      <workItem from="1560948351954" duration="1586000" />
+      <workItem from="1560950205744" duration="73000" />
+      <workItem from="1560950287650" duration="72000" />
+      <workItem from="1560950363775" duration="2107000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TaskMapperTest_testUpdate - 2019.05.22 at 21h 01m 49s.xml">
+      <configuration name="TaskMapperTest.testUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskMapperTest_testDelete - 2019.05.22 at 21h 03m 42s.xml">
+      <configuration name="TaskMapperTest.testDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserAccTaskMapperTest_test1 - 2019.05.22 at 21h 10m 29s.xml">
+      <configuration name="UserAccTaskMapperTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserAccTaskMapperTest_test2 - 2019.05.22 at 21h 11m 11s.xml">
+      <configuration name="UserAccTaskMapperTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserAccTaskMapperTest_test3 - 2019.05.22 at 21h 11m 53s.xml">
+      <configuration name="UserAccTaskMapperTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_test - 2019.05.25 at 19h 35m 18s.xml">
+      <configuration name="UserMapperTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_test - 2019.05.25 at 19h 35m 52s.xml">
+      <configuration name="UserMapperTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_test - 2019.05.25 at 19h 36m 58s.xml">
+      <configuration name="UserMapperTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testSelect - 2019.05.25 at 19h 43m 23s.xml">
+      <configuration name="UserMapperTest.testSelect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testSelect - 2019.05.25 at 19h 44m 47s.xml">
+      <configuration name="UserMapperTest.testSelect" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="295260000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="20" width="1346" height="698" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2978227" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32902032" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4185185" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43992606" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32902032" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902032" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32902032" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32902032" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2496112" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32970452" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/acc_task/list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/laidw/mapper/QuestionnaireMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/web/controller/QuestionnaireController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/questionnaire/result.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/questionnaire/result.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/laidw/web/controller/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/common/user-info.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/user/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/common.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/task/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/config/MyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/pagebean/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/AnswersTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Questionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/StatisticalAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/questionnaire/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/task/InvestigatingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/task/NormalTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/task/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/task/TaskTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/task/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/user/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/user/Identity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/user/Cow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/entity/user/UserTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/mapper/QuestionnaireMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/mapper/TaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/mapper/UserAccTaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/QuestionnaireService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/UserAccTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/MyUserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/QuestionnaireServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/TaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/UserAccTaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.20.RELEASE/spring-boot-autoconfigure-1.5.20.RELEASE.jar!/org/springframework/boot/autoconfigure/mail/MailProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laidw/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpareCash</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

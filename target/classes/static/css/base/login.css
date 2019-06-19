@@ -1,0 +1,54 @@
+.tip{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 楷体;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.msg{
+    font-family: 楷体;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+form{
+    background: #EEEEEE;
+}
+form div{
+    width: 337px;
+    height: 50px;
+    margin: 10px auto;
+}
+form div:nth-of-type(3){
+    text-align: center;
+    height: 10px;
+}
+form div:nth-of-type(4){
+    width: 150px;
+}
+form div:last-of-type{
+    width: 220px;
+}
+form div span{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+form div input,select,button{
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 220px;
+    line-height: 40px;
+}
+form div input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -7px;
+}

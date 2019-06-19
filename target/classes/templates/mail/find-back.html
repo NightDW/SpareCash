@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>找回用户信息</title>
+</head>
+<body>
+您的账户信息为：<br>
+UID：<span th:text="${user.uid}"></span><br>
+账户名：<span th:text="${user.name}"></span><br>
+密码：<span th:text="${user.password}"></span><br>
+绑定的电话：<span th:text="${user.phone}"></span><br>
+绑定的邮箱：<span th:text="${user.email}"></span><br>
+是否激活：<span th:text="${user.isActive}"></span><br>
+账户类型：<span th:text="${user.identity}"></span><br>
+<p th:if="${!user.isActive}">请点击<a th:href="${verifyUrl}">这个验证链接</a>完成验证邮箱操作，激活账户！</p><br>
+请妥善保管好您的账户信息！为了您的账号安全，找回用户信息后请删除本邮件！<br>
+如果您未曾执行找回用户信息操作，请忽略本邮件！
+</body>
+</html>

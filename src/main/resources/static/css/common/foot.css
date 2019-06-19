@@ -1,0 +1,17 @@
+.foot{
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+}
+.foot .from{
+    height: 50%;
+    width: 333px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.foot .author{
+    height: 50%;
+    width: 204px;
+    margin: 0 auto;
+    line-height: 50px;
+}

@@ -6,32 +6,32 @@
 - 04 [Vision](https://nightdw.github.io/SpareCash/04-Vision)（项目愿景）
 - 05 [Product Backlog](https://nightdw.github.io/SpareCash/05-Product Backlog) （产品特性库）
 - 06 Requirement Specification（需求规格说明书）
-  - 6.1 Usecase Diagram and UML Activity Diagram（用例图，业务过程/多泳道图）
-  - 6.2 Use Cases（用例+活动图）
-  - 6.3 Domian Models（领域模型）
-  - 6.4 State Models（状态模型）
-  - 6.5 System Sequence Diagrams（功能模型）
-  - 6.6 Supplementary Requirements（补充需求）
+  - 6.1 [Usecase Diagram and UML Activity Diagram](https://nightdw.github.io/SpareCash/06-1-UC Diagram and UML Activity Diagram)（用例图，业务过程/多泳道图）
+  - 6.2 [Use Cases](https://nightdw.github.io/SpareCash/06-2-Uses Cases)（用例+活动图）
+  - 6.3 [Domian Models](https://nightdw.github.io/SpareCash/06-3-Domain Models)（领域模型）
+  - 6.4 [State Models](https://nightdw.github.io/SpareCash/06-4-State Models)（状态模型）
+  - 6.5 [System Sequence Diagrams](https://nightdw.github.io/SpareCash/06-5-System Sequence Diagrams)（功能模型）
+  - 6.6 [Supplementary Requirements](https://nightdw.github.io/SpareCash/06-6-Supplementary Requirements)（补充需求）
 - 07 Design（设计说明书）
-  - 7.1 UI Design（界面设计）
-  - 7.2 Database Design（数据库设计）
-  - 7.3 Interface API Design（接口 API 设计）
-  - 7.4 Architecture Design（架构设计）
-  - 7.5 Usecase Design（用例设计）
+  - 7.1 [UI Design](https://nightdw.github.io/SpareCash/07-1-UI Design)（界面设计）
+  - 7.2 [Database Design](https://nightdw.github.io/SpareCash/07-2-Database Design)（数据库设计）
+  - 7.3 [Interface API Design](https://nightdw.github.io/SpareCash/07-3-Interface API Design)（接口 API 设计）
+  - 7.4 [Architecture Design](https://nightdw.github.io/SpareCash/07-4-Architecture Design)（架构设计）
+  - 7.5 [Usecase Design](https://nightdw.github.io/SpareCash/07-5-Usecase Design)（用例设计）
 - 08 生产规范与指南
-  - 8.1 XX 代码规范
-  - 8.2 REST API 设计规范
-  - 8.3 架构设计、详细设计（BCE方法）到应用程序框架映射指南
-  - 8.4 部署说明
+  - 8.1 [XX 代码规范](https://nightdw.github.io/SpareCash/08-1-XX代码规范)
+  - 8.2 [REST API 设计规范](https://nightdw.github.io/SpareCash/08-2-REST API设计规范)
+  - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](https://nightdw.github.io/SpareCash/08-3-映射指南)
+  - 8.4 [部署说明](https://nightdw.github.io/SpareCash/08-4-部署说明)
 - 09 成品展示
-  - 9.1 XX短视频
-  - 9.2 XX短视频
+  - 9.1 [XX短视频](https://nightdw.github.io/SpareCash/09-1-视频1)
+  - 9.2 [XX短视频](https://nightdw.github.io/SpareCash/09-2-视频2)
 - X1 Meeting-records
-  - inception meeting (yy/mm/dd)
-- X2 [KANBAN](https://sysu-swsad.github.io/dashboard/X2-kanban)
-- X3 [Auditing-records](https://sysu-swsad.github.io/dashboard/x3-auditing)
+  - [inception meeting (yy/mm/dd)](https://nightdw.github.io/SpareCash/X1-1-Meeting)
+- X2 [KANBAN](https://nightdw.github.io/SpareCash/X2-KANBAN)
+- X3 [Auditing-records](https://nightdw.github.io/SpareCash/X3-Auditing-records)
 - X4 Tech/Work Report
-  - 学号-title
+  - [15331139-报告](https://nightdw.github.io/SpareCash/X4-1-15331139-报告)
 - X5 Final Report
-  - 学号-title
-  - 小组分工与贡献率说明
+  - [15331139-报告](https://nightdw.github.io/SpareCash/X5-1-15331139-报告)
+  - [小组分工与贡献率说明](https://nightdw.github.io/SpareCash/X5-2-分工与贡献率说明)

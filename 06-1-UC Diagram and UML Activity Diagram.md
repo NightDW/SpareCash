@@ -2,8 +2,8 @@
 
 ### 用例图
 
-![](https://github.com/NightDW/SpareCash/blob/gh-pages/06-1-Usecase%20Diagram.png)
+![](https://github.com/NightDW/SpareCash/blob/gh-pages/06-1-Usecase%20Diagram.png?raw=true)
 
 ### 活动图
 
-![](https://github.com/NightDW/SpareCash/blob/gh-pages/06-1-Activity%20Diagram.png)
+![](https://github.com/NightDW/SpareCash/blob/gh-pages/06-1-Activity%20Diagram.png?raw=true)

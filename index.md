@@ -24,10 +24,10 @@
   - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](https://nightdw.github.io/SpareCash/08-3-映射指南)
   - 8.4 [部署说明](https://nightdw.github.io/SpareCash/08-4-部署说明)
 - 09 成品展示
-  - 9.1 [XX短视频](https://nightdw.github.io/SpareCash/09-1-视频1)
-  - 9.2 [XX短视频](https://nightdw.github.io/SpareCash/09-2-视频2)
+  - 9.1 [视频1](https://nightdw.github.io/SpareCash/09-1-视频1)
+  - 9.2 [视频2](https://nightdw.github.io/SpareCash/09-2-视频2)
 - X1 Meeting-records
-  - [inception meeting (yy/mm/dd)](https://nightdw.github.io/SpareCash/X1-1-Meeting)
+  - [inception meeting](https://nightdw.github.io/SpareCash/X1-1-Meeting)
 - X2 [KANBAN](https://nightdw.github.io/SpareCash/X2-KANBAN)
 - X3 [Auditing-records](https://nightdw.github.io/SpareCash/X3-Auditing-records)
 - X4 Tech/Work Report

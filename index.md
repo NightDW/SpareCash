@@ -1,3 +1,14 @@
+# Preface-前言
+
+- 01 关于安装包：本工程使用SpringBoot框架开发，只需执行mvn package命令即可将本工程打成jar包
+- 02 安装部署说明：参考[for-ali分支中的readme.txt文件](https://github.com/NightDW/SpareCash/blob/for-ali/readme.txt)
+- 03 关于用户手册/使用说明：本软件界面与交互比较友好，且有[演示视频](https://www.bilibili.com/video/av56580737/)，因此无需提供说明手册
+- 04 源代码：[默认分支-用于本地运行](https://github.com/NightDW/SpareCash/tree/master) [for-ali分支-部署到阿里服务器](https://github.com/NightDW/SpareCash/tree/for-ali)
+- 05 软件需求规格说明书：见本页面
+- 06 软件设计文档：见本页面
+- 07 小组分工与贡献率说明：见本页面
+
+
 # Index-目录
 
 - 01 [About](https://nightdw.github.io/SpareCash/01-About)（项目概况）

@@ -1,4 +1,4 @@
-<p style="font-size: 27px">Preface-前言</p>
+<p style="font-size: 30px">Preface-前言</p>
 
 - 01 关于安装包：本工程使用SpringBoot框架开发，只需执行mvn package命令即可将本工程打成jar包
 - 02 安装部署说明：参考[for-ali分支中的readme.txt文件](https://github.com/NightDW/SpareCash/blob/for-ali/readme.txt)

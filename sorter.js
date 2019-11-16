@@ -1,15 +1,15 @@
 //================================================================================================
-//===================本文件和本项目没有任何关系，防在这里只是为了方便用网络访问本文件===================
+//================本文件和本项目没有任何关系，防在这里只是为了方便用网络访问本文件================
 //================================================================================================
-//=================这里的代码以通用性（代码放到哪个页面都能使用）为优先，因此会比较复杂=================
+//==============这里的代码以通用性（代码放到哪个页面都能使用）为优先，因此会比较复杂==============
 //================================================================================================
-//=========================================神秘代码见下============================================
+//=========================================神秘代码见下===========================================
 //================================================================================================
 
 /*
 var sorter = document.createElement('script');
 sorter.type = "text/javascript";
-sorter.src = "https://github.com/NightDW/SpareCash/blob/gh-pages/sorter.js";
+sorter.src = "https://raw.githubusercontent.com/NightDW/SpareCash/gh-pages/sorter.js";
 document.getElementsByTagName('head')[0].appendChild(sorter);
 sorter_initialize();
 */
@@ -57,10 +57,10 @@ function sorter_initialize(){
 function sort(obj){
 	
 	//获取到被点击的th标签是整个页面中的第几个
-	var index = $("th").index(obj);
+    var index = $("th").index(obj);
 	
 	//解析所点击的th标签是第几个table的第几列，并获取到指定table和指定th标签
-	var json = parse(index);
+    var json = parse(index);
 	var table = tables[json.table_index];
 	var ths = table.getElementsByTagName("th");
 	var th = ths[json.th_index];

@@ -57,10 +57,10 @@ function sorter_initialize(){
 function sort(obj){
 	
 	//获取到被点击的th标签是整个页面中的第几个
-    var index = $("th").index(obj);
+	var index = $("th").index(obj);
 	
 	//解析所点击的th标签是第几个table的第几列，并获取到指定table和指定th标签
-    var json = parse(index);
+	var json = parse(index);
 	var table = tables[json.table_index];
 	var ths = table.getElementsByTagName("th");
 	var th = ths[json.th_index];

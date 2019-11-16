@@ -9,7 +9,7 @@
 /*
 var sorter = document.createElement('script');
 sorter.type = "text/javascript";
-sorter.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js";
+sorter.src = "https://github.com/NightDW/SpareCash/blob/gh-pages/sorter.js";
 document.getElementsByTagName('head')[0].appendChild(sorter);
 sorter_initialize();
 */

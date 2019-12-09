@@ -1,4 +1,4 @@
-本项目的GithubPage地址：https://nightdw.github.io/SpareCash/。
+本项目的GithubPage地址：https://nightdw.github.io/SpareCash/
 
 -----------------------------------------------------------------------------------------
 

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.laidw</groupId>
-    <artifactId>spare-cash</artifactId>
+    <artifactId>spare-cash-for-ali</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpareCash</name>
+    <name>SpareCashForAli</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
